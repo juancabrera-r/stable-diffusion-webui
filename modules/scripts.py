@@ -159,6 +159,10 @@ class Script:
         pass
 
     def before_process_batch(self, p, *args, **kwargs):
+
+        prompts = ["che boludo"]
+        seeds = 0
+
         """
         Called before extra networks are parsed from the prompt, so you can add
         new extra network keywords to the prompt with this callback.

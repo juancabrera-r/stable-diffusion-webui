@@ -2,6 +2,7 @@ import os
 import importlib.util
 
 from modules import errors
+import sys
 
 
 loaded_scripts = {}
@@ -13,6 +14,10 @@ def load_module(path):
     module_spec.loader.exec_module(module)
 
     loaded_scripts[path] = module
+
+    module_name, _ = os.path.splitext(os.path.basename(path))
+    sys.modules["scripts." + module_name] = module
+
     return module
 
 
