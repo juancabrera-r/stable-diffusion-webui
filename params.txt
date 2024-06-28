@@ -1,0 +1,2 @@
+holo blue dog
+Steps: 20, Sampler: DPM++ 2M, Schedule type: Automatic, CFG scale: 7, Seed: 1442477999, Size: 512x512, Model hash: 3407ae3bce, Model: my_dreambooth_model12, Version: 1.9.0
